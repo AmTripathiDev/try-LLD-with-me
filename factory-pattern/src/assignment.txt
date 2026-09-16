@@ -1,0 +1,7 @@
+Factory Pattern -  encapsulates object creation logic and separates it from the business logic, allowing objects to be created without exposing the exact class instantiation details to the client.
+
+Factory Types : 
+
+  - Simple factory 
+  - factory method 
+  - Absense factory method
