@@ -1,0 +1,36 @@
+Strategy Pattern defines a family of algorithms, encapsulates each algorithm in a separate class, and makes them interchangeable at runtime.
+
+EXAMPLE - 
+
+Suppose payment karna hai:
+
+Payment
+   |
+   ├── CreditCardStrategy
+   ├── UpiStrategy
+   └── PayPalStrategy
+
+Teeno ka kaam same hai → payment karna
+
+But implementation different hai.
+
+Runtime par:
+
+payment.setStrategy(new UpiStrategy());
+payment.pay();
+
+Baad mein:
+
+payment.setStrategy(new CreditCardStrategy());
+payment.pay();
+
+So main idea = interchangeable algorithms + runtime switching.
+
+
+Try to solve these questions
+
+1) Build a PaymentProcessor that supports Credit Card, PayPal, and Crypto payments, where the payment method can be swapped at runtime.
+2) Implement a text compression tool that can switch between Zip, RAR, and Gzip strategies without changing client code.
+3) Design a sorting utility where the comparison logic (by price, by rating, by name) is a pluggable strategy.
+4) A navigation app needs to compute routes via Walking, Driving, or Biking strategies — implement it, then explain how this differs from just using if-else.
+
